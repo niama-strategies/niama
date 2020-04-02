@@ -7,6 +7,6 @@
   "sideEffects": false,
   "dependencies": {
     "@niama/auth": "^2.17.3",
-    "aws-amplify": "^2.2.6"
+    "aws-amplify": "^3.0.3"
   }
 }

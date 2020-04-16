@@ -22,7 +22,7 @@
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-vue": "^6.2.2",
     "fork-ts-checker-webpack-plugin": "^4.0.5",
-    "ts-loader": "^6.2.1",
+    "ts-loader": "^7.0.0",
     "typescript": "^3.8.3",
     "vue": "^2.6.11",
     "vue-template-compiler": "^2.6.11"

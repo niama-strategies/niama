@@ -6,7 +6,8 @@ module.exports = {
   proseWrap: "always",
   semi: true,
   singleQuote: true,
-  svelteSortOrder: 'markup-scripts-styles',
+  svelteSortOrder: 'options-markup-scripts-styles',
   trailingComma: 'es5',
-  plugins: [require('prettier-plugin-tailwindcss')],
+  plugins: [require('prettier-plugin-svelte'),require('@ianvs/prettier-plugin-sort-imports'), require('prettier-plugin-tailwindcss')],
+  pluginSearchDirs: false
 };

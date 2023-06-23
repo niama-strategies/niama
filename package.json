@@ -1,28 +1,42 @@
 {
-  "name": "niama",
+  "name": "niama-monorepo",
   "private": true,
+  "description": "monorepo for niama projects",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/niama-strategites/niama.git"
   },
-  "packageManager": "pnpm@7.17.0",
-  "prettier": "@niama/config-prettier",
   "workspaces": [
     "apps/*",
     "packages/*"
   ],
   "scripts": {
-    "build": "turbo run build",
-    "clean": "turbo run clean",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "test": "turbo run test"
+    "dev": "turbo run dev"
   },
+  "engines": {
+    "node": ">=16.12.0",
+    "pnpm": ">=8.6.3"
+  },
+  "packageManager": "pnpm@8.6.3",
   "devDependencies": {
-    "@changesets/changelog-github": "^0.4.7",
-    "@changesets/cli": "^2.25.2",
-    "@niama/config-prettier": "workspace:*",
-    "eslint-config-niama": "workspace:*",
-    "turbo": "^1.6.3"
+    "@changesets/changelog-github": "^0.4.8",
+    "@changesets/cli": "^2.26.1",
+    "@ianvs/prettier-plugin-sort-imports": "^4.0.2",
+    "@total-typescript/ts-reset": "^0.4.2",
+    "@types/node": "^20.3.1",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0",
+    "eslint": "^8.43.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-turbo": "^1.10.5",
+    "eslint-plugin-svelte": "^2.31.0",
+    "eslint-plugin-unicorn": "^47.0.0",
+    "prettier": "^2.8.8",
+    "prettier-plugin-svelte": "^2.10.1",
+    "prettier-plugin-tailwindcss": "^0.3.0",
+    "svelte": "^4.0.0",
+    "turbo": "^1.10.5",
+    "typescript": "^5.1.3"
   }
 }

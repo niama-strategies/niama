@@ -1,5 +1,0 @@
-{
-  "extends": "@niama/config-typescript",
-  "include": ["."],
-  "exclude": ["dist", "build", "node_modules"]
-}

@@ -29,9 +29,6 @@ jobs:
       - name: Install NPM dependencies
         run: pnpm install
 
-      - name: Build
-        run: pnpm build
-
       - name: Create release Pull Request
         uses: changesets/action@v1
         env:

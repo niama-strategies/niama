@@ -17,17 +17,16 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Install dependencies
+      - name: Use PNPM
         uses: pnpm/action-setup@v2
 
-      - name: Setup Node.js
+      - name: Use Node.js 18
         uses: actions/setup-node@v3
         with:
-          node-version-file: ".nvmrc"
-          cache: "pnpm"
-     
-      - name: Install dependencies
-        shell: bash
+          node-version: 18
+          cache: 'pnpm'
+
+      - name: Install NPM dependencies
         run: pnpm install
 
       - name: Build
